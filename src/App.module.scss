@@ -1,0 +1,18 @@
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+  gap: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.second_block {
+  @include block;
+}

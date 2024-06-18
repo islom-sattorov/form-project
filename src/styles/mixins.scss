@@ -1,0 +1,10 @@
+@mixin block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 600px;
+  width: 100%;
+  background-color: $container-primary;
+  border-radius: 12px;
+  padding: 22px 18px;
+}

@@ -1,0 +1,34 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.container {
+  @include block;
+}
+
+.test_container {
+  color: white;
+  display: grid;
+  grid-template-columns: 80px 100px;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+
+  .debounce_title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .debounce_value {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+  }
+
+  .throttle_value {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+  }
+
+  .throttle_value {
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+  }
+}
